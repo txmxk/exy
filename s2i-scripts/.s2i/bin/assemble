@@ -11,14 +11,9 @@ config_s2i
 ######## CUSTOMIZATION STARTS HERE ############
 
 echo "---> Installing application source"
-cp -Rf /tmp/src/*.html ./
-DATE=`date "+%F"`
-echo " Application was built on $DATE" >> ./info.html
-echo " Astra inclinant, sed non obligant" >> ./info.html
-                                                                                                                    
-echo "---> Creating info page"
 
-#echo "Proudly served by Apache HTTP Server version $HTTPD_VERSION" >> ./info.html
+echo "---> Creating info page"
+echo "Proudly served by Apache HTTP Server version $HTTPD_VERSION" >> ./info.html
 
 ######## CUSTOMIZATION ENDS HERE ############
 
@@ -40,3 +35,4 @@ fi
 
 # Fix source directory permissions
 fix-permissions ./
+
