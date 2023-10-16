@@ -10,9 +10,9 @@ config_s2i
 
 ######## CUSTOMIZATION STARTS HERE ############
 DATE=`date "+%F"`
-cp -rf /tmp/src/*.html ./
-echo "App was build on $DATE" >> ./info.html
-echo "Astra inclianant, sed non obligant" >> ./info.html
+cp -Rf /tmp/src/*.html ./
+echo "Application was built on $DATE" >> ./info.html
+echo "Amor vinoit omnia" >> ./info.html
 
 
 ######## CUSTOMIZATION ENDS HERE ############
